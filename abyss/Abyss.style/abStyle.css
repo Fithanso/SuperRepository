@@ -42,6 +42,11 @@ body {
 
  }
 
+ #navbar #s.post {
+  position: absolute;
+  left: 20%;
+ }
+
  #Name {
   color: #1D59CD;
   font-size: 3em;
