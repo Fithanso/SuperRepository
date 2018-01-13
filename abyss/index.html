@@ -3,32 +3,48 @@
 <head>
 	<title>Abyss</title>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="Abyss.style/abStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="Abyss.style/abStyle.css"/>
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 <body>
 	
 <ul id="navbar">
   <li id="logo" class="navelement"><a href="#">Logo</a></li><!--классы к li или к a?-->
-  <li id="home" class="navelement"><a href="#">Home</a></li>
-  <li id="layouts" class="navelement"><a href="#">Layouts</a></li>
-  <li id="spost" class="navelement"><a href="#">Single post</a></li>
-    <li id="search"><form>
-         <p><input id="searchfield" type="search" placeholder="Поиск по сайту"> 
-         <!--<input id="searchbtn" type="submit" value="Найти"></p>-->
+  <li id="home" class="navelement"><a href="#"><span class="navtext">Home</span></a></li>
+  <li id="layouts" class="navelement"><a href="#"><span class="navtext">Layouts</span></a></li>
+  <li id="spost" class="navelement"><a href="#"><span class="navtext">Single post</span></a></li>
+    <li id="search">
+      <form>
+         <p><input id="searchfield" type="search" placeholder="Search here...             &#128269;"> 
       </form>
   </li>
 </ul>
 <div id="Name"><span>Name</span></div>
 
 <div id="upperdiv">
-<div id="person">
-	text
+ <div id="person">
+	<img id="avatar" src="Abyss.style/avatar.png">
+  <div id="persontext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</div>
+ </div>
+ <div id="infoslider">
+  <img src="Abyss.style/slider-image.jpg" id="infoimg">
+  <img src="Abyss.style/right-arrow.png" id="leftarr">
+  <img src="Abyss.style/right-arrow.png" id="rightarr">
+  <div id="uppertext">Yellowstone adventure</div>
+ </div>
 </div>
 
-	
+<div id="categories"><span>Categories</span></div>
+
+<div id="lowerdiv">
+  <div id="first" class="low4divs">text</div>
+  <div id="second" class="low4divs"><img src="Abyss.style/lifestyle.jpg" id="secondimg"><div id="lifestyle">Lifestyle</div></div>
+  <div id="third" class="low4divs"><img src="Abyss.style/adventure.jpg" id="thirdimg"><div id="adventure">Adventure</div></div>
+  <div id="fourth" class="low4divs">text</div>
 </div>
 
 

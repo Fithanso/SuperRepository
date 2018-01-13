@@ -1,9 +1,9 @@
 
 body {
-	 margin: 0;
-     padding: 0;
-     height: 1350px;
-     background-image: url(abyss-fade.jpeg);
+	   margin: 0;
+     padding: 0;/*можно убрать*/
+     height: 2000px;
+     background-image: url(abyss-fade.jpeg);/*удлинить секцию Name, для секции приветствия и фото. добавить тень ссылкам в шапке при наведении*/
  }
 #navbar {
   overflow: hidden;/*поведение при перенаполнении*/
@@ -11,13 +11,16 @@ body {
   padding: 0;
   list-style-type: none;
   width: 100%;
+  height: 6%;
   background-color: #242B38;
 }
-.navelement { /*как ограничить область в которой изменяется курсор при наведении на шапку (уменшить область) navbar li*/
+.navelement { /* ограничить область в которой изменяется курсор при наведении на шапку (уменшить область) navbar li*/
  display: inline; 
  float: left;
- margin-left: 20px;
+ margin-top: 1%;
+ margin-left: 60px;
  font-family:'Oxygen',sans-serif;
+
  }
 
 #navbar a {
@@ -25,46 +28,254 @@ body {
   padding: 30px 20px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
   display: inline-block;
 }
 
-  #logo {
+.navtext:hover {/*сделать так, чтобы слова не двигались*/
+  border: 5px solid blue;
+  border-radius: 40px;
+  background-color: blue;
+}
+
+  #logo a {
  	color: #1D59CD;
-  font-weight: 3em;
  }
 
+ #search {
+    float: right;
+    margin-right: 50px;
+    margin-top: 2%;
+}
+
   #searchfield {
-    
+    font-family:'Oxygen',sans-serif;
+    height: 2em;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: #343d46;
+    border: 1px solid #252729;
   }
 
+  input::-webkit-input-placeholder {color: white;}/* можно к id и классам*/
+
+  #searchfield:hover {
+    background-color: #4F555C;
+  }
+   #searchfield:focus {
+    font-family:'Oxygen',sans-serif;
+    background-color: #4F555C;
+    outline: none;
+    color: #409CF7;
+  }
+
+
  #Name {
-  color: #1D59CD;
-  letter-spacing: 5px;
+  color: #D5CDE9;
+  letter-spacing: 7px;
   font-size: 3em;
   font-family:'Lobster',cursive;
   text-align: center;
-  padding-top: 4%;
+  margin-top: 15%;
  }
 
  #upperdiv {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-top: 15%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     background-image: url(div-fade.png);
     width: 100%;
-    height: 35%;
+    height: 25%;
 
  }
 
  #person { 
-  margin-left: 1%;
+  margin-left: 0.5%;
   border: 3px solid #1C1C1C;/**/
-  width: 300px;
-  height: 98%;
-  background-color: #5882FA;
+  width: 25%;
+  height: 99%;
+  background-color: #172944;
+  
  }
 
-#search {
-    float: right;
-    margin-right: 50px;
-    margin-top: 13px;
+ #avatar {
+  height: 30%;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+  border: 1px solid grey;
+  border-radius: 5px;
+ }
+
+ #persontext {
+  margin-top: 1%;
+  color: #D5CDE9;
+  font-family:'Oxygen',sans-serif;
+  padding: 2%;
+  margin-top: 0.5%;
+  font-weight: bold;
+  word-spacing: 3px;
+ }
+
+#infoslider {
+  float: right;
+  margin-top: -37.2%;
+  margin-right: 10px;
+  border: 3px solid #1C1C1C;
+  width: 72%;
+  height: 99%;
+  background-color: #172944;
+
+ }
+
+ #infoimg {
+  width: 85%;
+  height: 80%;
+  border: 1px solid grey;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+ }
+
+ #rightarr {
+  height: 6%;
+  width: 3%;
+  float: right;
+  margin-right: 2.2%;
+  margin-top: -20%;
+ }
+
+  #leftarr {
+  transform: scaleX(-1);
+  height: 6%;
+  width: 3%;
+  float: left;
+  margin-left: 2.2%;
+  margin-top: -20%;
+ }
+
+ #uppertext {
+  text-align: center;
+  font-family:'Oxygen',sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #D5CDE9;
+  margin-top: 2%;
+  letter-spacing: 2px;
+
+ }
+
+ #categories {
+  color: #D5CDE9;
+  letter-spacing: 7px;
+  font-size: 3em;
+  font-family:'Lobster',cursive;
+  text-align: center;
+  margin-top: 2%;
+ }
+
+ #lowerdiv {
+  margin-top: 3%;
+  background-image: url(div-fade.png);
+  height: 17%;
+  padding-top: 1%;
+  padding-bottom: 0.5%;/*почему top и bottom разные?*/
+  padding-left: 0.5%;
+  
+  }
+
+ .low4divs {
+ background-color: #2BCBC0;
+ border: 3px solid #1C1C1C;
+ height: 96%;
+ margin-left: 0.5%;
+ float: left;
+
+ }
+
+ #first {
+ width: 26%;
+ }
+
+ #second {
+width: 23%;
+ }
+
+ #secondimg {
+  width: 100%;
+  height: 100%;
+ }
+
+ #lifestyle {
+  text-align: center;
+  font-family:'Oxygen',sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-top: -60px;
+  color: #0A2396;
+  text-decoration: underline;
+ }
+
+#third {
+width: 23%;
+ }
+
+ #thirdimg {
+  width: 100%;
+  height: 100%;
+  /*opacity: 0.7;*/
+ }
+  #adventure {
+  text-align: center;
+  font-family:'Oxygen',sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-top: -60px;
+  color: #0A2396;
+  text-decoration: underline;
+ }
+
+
+#fourth {
+width: 23%;
+ }
+
+@media screen and (max-width: 1300px) {/*max-width- условие при котором стили будут выполняться*/
+  div {
+    background-color: red;
+  }
 }
+
+#infoslider {
+  animation-name: abyss;
+  animation-duration: 1s;
+}
+
+#person {
+  animation-name: hyper;
+  animation-duration: 0.8s;
+}
+
+#persontext {
+  animation-name: avatar;
+  animation-duration: 3s;
+}
+
+@keyframes hyper {
+  from {width: 0px;}
+  to {width: 335px;}
+}
+
+@keyframes abyss {
+  from {width: 0px;}
+  to {width: 970px;}
+}/* а эффекты?*/
+
+@keyframes avatar {
+ 0% {opacity: 0;}
+ 30% {opacity: 0;}
+ 100% {opacity: 1;}
+} 
