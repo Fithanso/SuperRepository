@@ -5,32 +5,45 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" type="text/css" href="Abyss.style/abStyle.css"/>
+<link rel="stylesheet" type="text/css" href="Abyss.style/animate.css"/>
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<script src="Abyss.style/script.js"></script>
+<script src="Abyss.style/wow.min.js"></script>
+
+<script>
+new WOW().init();
+</script>
 
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	
-<ul id="navbar">
-  <li id="logo" class="navelement"><a href="#">Logo</a></li><!--классы к li или к a?-->
-  <li id="home" class="navelement"><a href="#"><span class="navtext">Home</span></a></li>
-  <li id="layouts" class="navelement"><a href="#"><span class="navtext">Layouts</span></a></li>
-  <li id="spost" class="navelement"><a href="#"><span class="navtext">Single post</span></a></li>
-    <li id="search">
+<ul id="navbar" class="wow fadeInDown" data-wow-duration = "1s">
+  <li id="home" class="navelement wow fadeIn" data-wow-delay = "1s"><a href="#"><span class="navtext">Home</span></a></li>
+  <li id="layouts" class="navelement wow fadeIn" data-wow-delay = "1s"><a href="#"><span class="navtext">Layouts</span></a></li>
+  <li id="spost" class="navelement wow fadeIn" data-wow-delay = "1s"><a href="#"><span class="navtext">Single post</span></a></li>
+  <li id="logo" class="navelement wow fadeIn" data-wow-delay = "0.8s"><a href="#"><span>Abyss</span></a></li>
+
+    <li id="search" class="navelement wow fadeIn" data-wow-delay = "1s">
       <form>
-         <p><input id="searchfield" type="search" placeholder="Search here...             &#128269;"> 
+         <p><input id="searchfield" type="search" placeholder="Search for post...                    &#128269;"> 
       </form>
   </li>
 </ul>
-<div id="Name"><span>Name</span></div>
 
+<div id="Name"><span class="wow fadeIn" data-wow-duration = "1s" data-wow-delay="1s">Name</span></div>
+
+ <a href="javascript://0" onclick="slowScroll ('#infoslider')"><div id="top_anchor" class="wow fadeIn" data-wow-duration = "1s" data-wow-delay="1.5s"><img class = "wow pulse" id="anchor_arrow" src="Abyss.style/anchor_arrow.png" data-wow-duration = "1s" data-wow-iteration = "infinite"></div></a>
 <div id="upperdiv">
- <div id="person">
+ <div id="person" class="wow fadeInLeft"><!-- opacity текста сделать как было(анимация)-->
 	<img id="avatar" src="Abyss.style/avatar.png">
   <div id="persontext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</div>
  </div>
- <div id="infoslider">
+ <div id="infoslider" class="wow fadeInRight">
   <img src="Abyss.style/slider-image.jpg" id="infoimg">
   <img src="Abyss.style/right-arrow.png" id="leftarr">
   <img src="Abyss.style/right-arrow.png" id="rightarr">
@@ -38,14 +51,23 @@
  </div>
 </div>
 
-<div id="categories"><span>Categories</span></div>
-
-<div id="lowerdiv">
-  <div id="first" class="low4divs">text</div>
-  <div id="second" class="low4divs"><img src="Abyss.style/lifestyle.jpg" id="secondimg"><div id="lifestyle">Lifestyle</div></div>
-  <div id="third" class="low4divs"><img src="Abyss.style/adventure.jpg" id="thirdimg"><div id="adventure">Adventure</div></div>
-  <div id="fourth" class="low4divs">text</div>
+<div class="aside">
+  <div id="first" class="inner-aside">
+    <div id = "categories">Categories
+    </div>
+    <div id="first_col"><a href="#" class="catlink">character (3)</a><br><a href="#" class="catlink">sun (5)</a><br><a href="#" class="catlink">manual (2)</a><br><a href="#" class="catlink">graduate (4)</a><br><a href="#" class="catlink">maximum (5)<br></a></div>
+    <div id="second_col"><a href="#" class="catlink">color (1)<br><a href="#" class="catlink">path (5)</a><br><a href="#" class="catlink">glance (3)</a><br><a href="#" class="catlink">valley (2)</a><br><a href="#" class="catlink">force (4)<br></a></div>
+  </div>
 </div>
+  <div class="justapost" data-wow-delay = "1s">
+  <img src="Abyss.style/1post.png" class="postimg">
+  <div class="phototext"><p>Reveal your power</p></div>
+  <p class="date">Monday, March 25, 2318</p>
+  <p class="tags">Tags: <a href="#" class="tagnames"><div id="tag1">Force</div></a><a href="#" class="tagnames"><div id="tag2">Character</div></a></p>
+  <div class="maintext">As absolute is by amounted repeated entirely ye returned. These ready timed enjoy might sir yet one since. Years drift never if could forty being no. On estimable dependent as suffering on my. Rank it long have sure in room what as he.</div>
+  <a href="#"><div class="cont_div"><p class="cont">Continue reading</p></div></a>
+
+  </div>
 
 
 </body>
